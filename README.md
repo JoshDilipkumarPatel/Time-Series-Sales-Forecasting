@@ -5,6 +5,21 @@ It handles data cleaning, feature engineering (lags, rolling averages), and time
 
 ---
 
+## 📖 Project Overview
+
+Forecasting demand is a critical challenge in retail and e-commerce. Traditional models often struggle with seasonality, sudden spikes, and changing trends.  
+
+This project demonstrates a **machine learning-driven approach** where:
+
+- Historical sales are transformed into lag features and rolling averages.  
+- Data is split chronologically to mimic real-world forecasting conditions.  
+- A **LightGBM regressor** is trained to capture nonlinear trends and interactions.  
+- Final predictions are exported to `submission.csv`, suitable for Kaggle-style competitions or production pipelines.
+
+The pipeline is designed to be **simple, reproducible, and easily extendable** for more advanced time-series work.
+
+---
+
 ## 🚀 Features
 
 * End-to-end pipeline: raw data → cleaned features → model training → forecasts
