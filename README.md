@@ -26,14 +26,14 @@ It handles data cleaning, feature engineering (lags, rolling averages), and time
 ## 📂 Project Structure
 
 ```
-├── sales_forecasting.py   # Main project code
-├── train.csv              # Training dataset (update path)
-├── test.csv               # Test dataset (update path)
-├── sample_datasets/       # Additional example datasets
-│   ├── california_housing_data*.csv
-│   ├── mnist_*.csv
-│   └── anscombe.json
-└── README.md              # Project documentation
+|── README.md              # Project Documentation
+├── Untitled7.ipynb        # Core Code
+├── sample_datasets
+    ├── california_housing_train.csv              # Training dataset
+    ├── california_housing_test.csv               # Test dataset
+    ├── california_housing_data_train_small.csv
+    ├── mnist_test.csv
+    └── anscombe.json
 ```
 
 ---
@@ -43,8 +43,8 @@ It handles data cleaning, feature engineering (lags, rolling averages), and time
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/sales-forecasting.git
-cd sales-forecasting
+git clone https://github.com/JoshDilipkumarPatel/Time-Series-Sales-Forecasting.git
+cd Time-Series-Sales-Forecasting
 ```
 
 ### 2. Install dependencies
@@ -62,18 +62,12 @@ scikit-learn
 lightgbm
 ```
 
-### 3. Add your data
+### 3. Add your data and Run
 
 * Place your `train.csv` and `test.csv` in the root folder
 * Or experiment with the **sample datasets** provided in `sample_datasets/`
 
-### 4. Run the pipeline
-
-```bash
-python sales_forecasting.py
-```
-
-### 5. Output
+### 4. Output
 
 The script generates a **`submission.csv`** file with sales predictions:
 
